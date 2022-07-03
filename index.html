@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Visualizer</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <header>
+            <img class="logo" src="vis_logo.svg" alt="logo" title="A Project By Arnav Saraswat">
+            <nav>
+                
+                <ul class="algos">
+                    <li><a href="#" id="bubble" class="bubble" onclick="BubbleSort(size,delay),button_disable(),slider_disable()">Bubble Sort</a></li>
+                    <li><a href="#" id="selection" class="selection">Selection Sort</a></li> 
+                    <li><a href="#" id="heap" class="heap">Heap Sort</a></li>
+                    <li><a href="#" id="radix" class="radix">Radix Sort</a></li>
+                    <li><a href="#" id="merge" class="merge">Merge Sort</a></li>
+                    <li><a href="#" id="quick" class="quick">Quick Sort</a></li>
+                    <li><a href="#" id="shell" class="shell">Shell Sort</a></li>                
+                </ul>
+            </nav>
+            <a href="#" id="new" class="new">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                 Generate New Array
+            </a>
+        </header>
+        <section>
+
+            <div id="Info_Cont1">
+                <h2>Options:</h2><br><br>
+                <div class="options">
+                    <p>Array size:</p>
+                    <input type="range" min="10" max="120" value="565 class="number" id="number">
+                    <br><br>
+                    <p>Delay:</p>
+                    <input type="range" min="5" max="100" value="50" class="speed" id="speed">
+                </div>
+            </div>
+    
+            <div id="array_container">
+                <div class="canvas" id="canvas"></div>
+            </div>
+    
+            <div id="Info_Cont2">
+                <p></p>
+            </div>
+    
+        </section>
+        
+              
+    </div>
+    <script src="main.js"></script>
+    <script src="BubbleSort.js"></script>
+    
+</body>
+</html>
